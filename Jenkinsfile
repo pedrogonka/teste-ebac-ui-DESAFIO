@@ -2,13 +2,13 @@ pipeline {
 agent any
 
 stages {
-    stage ('Clonar repositorio') {
-        git branch: 'main', url: 'https://github.com/pedrogonka/teste-ebac-ui-DESAFIO.git'
+    stage('Clonar repositório') {
+        steps {
+            checkout([$class: 'GitSCM', branches: [[name: 'main']], userRemoteConfigs: [[url: 'https://github.com/pedrogonka/teste-ebac-ui-DESAFIO.git']]])
+        }
     }
-}
-
-stage ('Instalar dependencias'){
-    steps{
+    stage('Instalar dependências') {
+        steps {
         sh 'npm install'
     }
 }
