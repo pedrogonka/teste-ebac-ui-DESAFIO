@@ -3,7 +3,7 @@ agent any
 
 stages {
     stage ('Clonar repositorio') {
-        git branch 'main', url:'https://github.com/pedrogonka/teste-ebac-ui-DESAFIO.git'
+        git branch: 'main', url: 'https://github.com/pedrogonka/teste-ebac-ui-DESAFIO.git'
     }
 }
 
