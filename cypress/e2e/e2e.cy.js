@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 const { faker } = require("@faker-js/faker");
 
-context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
+context(' - Testes End-to-end - Fluxo de pedido', () => {
     /*  Como cliente 
         Quero acessar a Loja EBAC 
         Para fazer um pedido de 4 produtos 
