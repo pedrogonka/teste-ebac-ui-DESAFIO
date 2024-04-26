@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clonar repositório') {
             steps {
-                git branch: 'main', url: 'https://github.com/pedrogonka/teste-ebac-ui-DESAFIO.git'
+                git branch: 'master', url: 'https://github.com/pedrogonka/teste-ebac-ui-DESAFIO.git'
             }
         }
 
